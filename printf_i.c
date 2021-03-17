@@ -10,9 +10,10 @@
  **/
 int print_i(va_list print)
 {
-	int numero, digito = 1; /** digito es la variable que me cuenta el numero de digitos que tiene lo que el usuario quiere imprimir**/
+	int numero, digito = 1; /** digito que cuenta el numero de caracteres**/
 	unsigned int aux_num;
 	char p;
+
 	numero = va_arg(print, int);
 	if (numero < 0)
 	{
