@@ -24,5 +24,4 @@ int print_s(va_list print);
 int Percent_sign(__attribute__((unused)) va_list print);
 int print_i(va_list print);
 
-
 #endif /* _HOLBERTON_H */
