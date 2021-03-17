@@ -1,0 +1,61 @@
+Name : _printf
+
+Synopsis
+#include "holberton.h"
+#include <limits.h>
+#include <stdio.h>
+
+int _printf(const char *format, ...);
+
+Description
+
+The function _printf() produce output according to a format as described below.
+This function write the output under the control of a format string that specifies how subsequent arguments are converted for output.
+Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
+
+The conversion specifier
+
+The character %  with a character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
+
+d or i:
+The int argument is converted to signed decimal notation. Print the integral numbers and return zero if the output is empty
+
+c:
+this is for a type char characters
+
+s:
+this specificator is for print string. Characters from the array are written up to (but not including) a terminating null byte 
+('\0');the size of the array, the array must contain a terminating null byte.
+
+Example
+#include <limits.h>
+#include <stdio.h>
+#include "holberton.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	int len;
+	int len2;
+
+  len = _printf("Let's try to printf a simple sentence.\n");
+ print the string "Let's try to printf a simple sentence.
+	
+  _printf("Negative:[%d]\n", -762534);
+print the negative number -762534.
+
+_printf("Character:[%c]\n", 'H');
+print the char H.
+
+	return (0);
+}
+
+Note
+This manual was built on March 16, 2021 in the margin of the holberton school printf project.
+
+Author
+Ana Maria Roman & Carolina Ramon.
