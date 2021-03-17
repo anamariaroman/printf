@@ -6,12 +6,12 @@
 /**
  * print_i - prints int
  * @print: integer
- * Return: 1
+ * Return: digito
  **/
 int print_i(va_list print)
 {
 	int numero, digito = 1; /** digito que cuenta el numero de caracteres**/
-	unsigned int aux_num;
+	int aux_num;
 	char p;
 
 	numero = va_arg(print, int);
@@ -19,7 +19,7 @@ int print_i(va_list print)
 	{
 		p = '-';
 		_putchar(p);
-		aux_num = numero * -1;
+		aux_num = -numero;
 	}
 	else
 		aux_num = numero;
@@ -29,10 +29,12 @@ int print_i(va_list print)
 	}
 	while (digito != 0)
 	{
-		p = aux_num / digito + 48;
+		p = (aux_num / digito) + 48;
 		_putchar(p);
+   
 		aux_num = aux_num % digito; /** actualizacion**/
 		digito = digito / 10;		/** actualizacion**/
 	}
-	return (p);
+  
+	return (aux_num);
 }

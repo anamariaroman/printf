@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  * struct pr - Struct to a funtion pointer pr
