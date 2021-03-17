@@ -19,14 +19,10 @@ typedef struct pr
 int _putchar(char c);
 int (*print_format(const char *format))(va_list);
 int _printf(const char *format, ...);
-int print_c(va_list print_c);
+int print_c(va_list print);
 int print_s(va_list print_s);
+int Percent_sign(__attribute__((unused)) va_list print);
 int print_i(va_list print_i);
-/**
- * Percent_sign - prints percent symbol
- **/
-int Percent_sign(__attribute__((unused)) va_list Percent)
-
 
 
 #endif /* _HOLBERTON_H */
