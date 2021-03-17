@@ -4,7 +4,7 @@
 #include "holberton.h"
 
 /**
- * print_c - print a character
+ * print_c - prints a character
  * @print_c: list of arguments
  * Return: 1
  */

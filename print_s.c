@@ -6,7 +6,7 @@
 /**
  * print_s - prints the string, char by char
  * @print_s: list of arguments, va_list
- * Return: the number of printed chars, int
+ * Return: the number of printed chars, ints
  */
 int print_s(va_list print_s)
 {

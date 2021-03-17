@@ -4,7 +4,7 @@
 #include "holberton.h"
 
 /**
- * Percent_sign - print a percent a percent sign
+ * Percent_sign - this print a percent a percent sign
  * @print: list of arguments
  * Return: expected a variable to be unused
  */

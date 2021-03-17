@@ -5,7 +5,7 @@
 
 /**
  * print_i - prints int
- * @print: entire
+ * @print: integer
  * Return: 1
  **/
 int print_i(va_list print)

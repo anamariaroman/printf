@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * print_format - printf function
+ * print_format - our printf function
  * @format: is a %argument
  * Return: int number arguments
  */

@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * struct pr - Struct pr
+ * struct pr - Struct to a funtion pointer pr
  *
  * @s: Data
  * @n: format define
