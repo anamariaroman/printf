@@ -11,7 +11,7 @@
 int print_i(va_list print)
 {
 	int numero, digito = 1; /** digito que cuenta el numero de caracteres**/
-	int aux_num;
+	int aux_num, cambios = 0;
 	char p;
 
 	numero = va_arg(print, int);
@@ -19,6 +19,7 @@ int print_i(va_list print)
 	{
 		p = '-';
 		_putchar(p);
+    cambios++;
 		aux_num = -numero;
 	}
 	else
@@ -31,10 +32,10 @@ int print_i(va_list print)
 	{
 		p = (aux_num / digito) + 48;
 		_putchar(p);
-   
+   cambios++;
 		aux_num = aux_num % digito; /** actualizacion**/
 		digito = digito / 10;		/** actualizacion**/
 	}
   
-	return (aux_num);
+	return (cambios);
 }
